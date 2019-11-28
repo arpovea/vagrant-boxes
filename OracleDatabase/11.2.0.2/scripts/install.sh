@@ -24,8 +24,8 @@ echo 'INSTALLER: Oracle preinstall and openssl complete'
 
 # fix locale warning
 yum reinstall -y glibc-common
-echo LANG=en_US.utf-8 >> /etc/environment
-echo LC_ALL=en_US.utf-8 >> /etc/environment
+echo LANG=es_ES.UTF-8 >> /etc/environment
+echo LC_ALL=es_ES.UTF-8 >> /etc/environment
 
 echo 'INSTALLER: Locale set'
 

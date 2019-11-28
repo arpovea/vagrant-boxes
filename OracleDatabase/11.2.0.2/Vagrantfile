@@ -30,10 +30,10 @@ offset_sec = Time.now.gmt_offset
 if (offset_sec % (60 * 60)) == 0
   offset_hr = ((offset_sec / 60) / 60)
   timezone_suffix = offset_hr >= 0 ? "-#{offset_hr.to_s}" : "+#{(-offset_hr).to_s}"
-  SYSTEM_TIMEZONE = 'Etc/GMT' + timezone_suffix
+  SYSTEM_TIMEZONE = 'Europe/Madrid'
 else
   # if host time zone isn't an integer hour offset, fall back to UTC
-  SYSTEM_TIMEZONE = 'UTC'
+  SYSTEM_TIMEZONE = 'Europe/Madrid'
 end
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
